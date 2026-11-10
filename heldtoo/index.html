@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Held, Too. – Dr. Caelan Soma</title>
+  <meta name="description" content="Held, Too. is a page on Dr. Caelan Soma’s site for the parent, caregiver, or professional who is doing the holding." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* Held, Too. palette — this page only. Swap the four hex values below. */
+    :root {
+      --ivory: #F3EDE4;       /* warm ivory */
+      --terracotta: #C4785A;  /* dusty terracotta */
+      --plum: #6B4C6D;        /* muted plum */
+      --olive: #3D4A3E;       /* charcoal olive */
+      --text-main: var(--olive);
+      --text-muted: color-mix(in srgb, var(--olive) 78%, transparent);
+      --border-subtle: color-mix(in srgb, var(--terracotta) 45%, transparent);
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, color-mix(in srgb, var(--plum) 14%, transparent) 0, var(--ivory) 58%);
+      background-attachment: fixed;
+      min-height: 100vh;
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 2rem 0;
+    }
+
+    .article-container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .article-header {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .article-kicker {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--plum);
+      margin-bottom: 0.75rem;
+    }
+
+    .article-title {
+      font-size: clamp(2.1rem, 3vw + 1.2rem, 3rem);
+      font-weight: 600;
+      color: var(--olive);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+    }
+
+    .article-title span { color: var(--plum); }
+
+    .article-lede {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 34rem;
+      margin: 0 auto;
+    }
+
+    .article-content {
+      background: color-mix(in srgb, var(--ivory) 92%, transparent);
+      border-radius: 1.3rem;
+      padding: 3rem;
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 12px 30px color-mix(in srgb, var(--olive) 8%, transparent);
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    .article-content h2 {
+      font-size: 1.5rem;
+      color: var(--plum);
+      margin-top: 2.25rem;
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+    }
+
+    .article-content h2:first-child { margin-top: 0; }
+
+    .article-content p {
+      margin-bottom: 1.25rem;
+      color: var(--text-main);
+    }
+
+    .key-message {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--plum);
+      margin: 1.5rem 0;
+      padding: 1.25rem 1.5rem;
+      background: color-mix(in srgb, var(--plum) 8%, transparent);
+      border-left: 4px solid var(--terracotta);
+      border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    .article-ctas {
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .article-ctas a {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: transform 0.15s ease;
+    }
+
+    .btn-primary {
+      background: var(--plum);
+      color: var(--ivory);
+      box-shadow: 0 10px 28px color-mix(in srgb, var(--plum) 25%, transparent);
+    }
+
+    .btn-ghost {
+      background: var(--ivory);
+      border: 1px solid var(--terracotta);
+      color: var(--plum);
+    }
+
+    .article-ctas a:hover { transform: translateY(-1px); }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      background: var(--plum);
+      color: var(--ivory);
+      text-decoration: none;
+      border-radius: 999px;
+      font-weight: 500;
+      box-shadow: 0 14px 30px color-mix(in srgb, var(--olive) 16%, transparent);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .back-link:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 36px color-mix(in srgb, var(--olive) 20%, transparent);
+    }
+
+    @media (max-width: 640px) {
+      .article-container { padding: 0 1.3rem; }
+      .article-content { padding: 2rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Revise the hero, the "What it is" section, and the email link below. -->
+  <div class="article-container">
+    <header class="article-header">
+      <p class="article-kicker">Dr. Caelan Soma</p>
+      <h1 class="article-title"><span>Held, Too.</span></h1>
+      <p class="article-lede">For the adult who is doing the holding.</p>
+    </header>
+
+    <article class="article-content">
+      <h2>What it is</h2>
+      <p>Held, Too. is a page on this site for parents, caregivers, and professionals. The rest of the site starts with a child’s nervous system: what is happening underneath behavior, and how to respond when stress takes over.</p>
+      <p class="key-message">This page starts with the person who stays with them.</p>
+      <p>It is the companion to that work. The longer description of Held, Too. can be revised here when it is ready.</p>
+
+      <h2>Next step</h2>
+      <p>Write to Dr. Caelan Soma about Held, Too.</p>
+      <div class="article-ctas">
+        <a class="btn-primary" href="mailto:hello@doctorcae.com?subject=Held%2C%20Too.">Email hello@doctorcae.com</a>
+        <a class="btn-ghost" href="../index.html">Back to the site</a>
+      </div>
+    </article>
+
+    <a href="../index.html" class="back-link">← Back to Home</a>
+  </div>
+</body>
+</html>
